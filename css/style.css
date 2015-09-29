@@ -1,0 +1,133 @@
+/* Color Used
+ ----------------------------------
+ ---------------------------------------------
+ Green: #15A781
+ Brown: #FAB037
+ */
+body {
+	font-family: Georgia, sans-serif;
+	font-size: 16px;
+	color: #000;
+	margin: 0;
+	height: 100% !important;
+	background: #fff;
+}
+div, dl, dt, dd, ul, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+h2.h2Styled, h3.h3Styled {
+	color: #FAB037;
+}
+#bodyWrapper {
+	background: #fafafa;
+}
+/*----------- Header --------------*/
+header {
+	background: #3B83C0;
+	text-align: center;
+	color: #fff;
+	height: 100px;
+}
+header h1 {
+	line-height: 100px;
+}
+/*----------- Wrapper --------------*/
+#bodyWrapper {
+	min-height: 100% !important;
+	position: relative !important;
+	background: #fff;
+}
+/*----------- Content --------------*/
+#mainContent {
+	padding: 10px;
+	padding-bottom: 50px !important; /* Height of the footer element */
+	background-color: #fff;
+}
+/*----------- Footer --------------*/
+footer {
+	width: 100% !important;
+	height: 50px !important;
+	position: absolute !important;
+	bottom: 0 !important;
+	left: 0 !important;
+	background: rgb(91, 189, 114) none repeat scroll 0% 0%;
+	color: #fff;
+}
+div#liscene p {
+	line-height: 25px;
+}
+div#liscene {
+	position: relative;
+	top: 10px;
+	text-align: center;
+}
+/*----------- Extras --------------*/
+#error404 {
+	text-align: center;
+}
+#error404  img {
+	display: block;
+	margin: auto;
+	width: 550px;
+}
+hr.hrStyled {
+	border: 0;
+	height: 3px;
+	background-image: -webkit-linear-gradient(left, #f0f0f0, #1ACE9E, #f0f0f0);
+	background-image: -moz-linear-gradient(left, #f0f0f0, #1ACE9E, #f0f0f0);
+	background-image: -ms-linear-gradient(left, #f0f0f0, #1ACE9E, #f0f0f0);
+	background-image: -o-linear-gradient(left, #f0f0f0, #1ACE9E, #f0f0f0);
+}
+/* Booststrap Custom CSS
+ -----------------------------
+ -----------------------------------*/
+nav.navbar.navbar-default {
+	margin: 0px;
+}
+div#sthoverbuttons {
+	top: 35%;
+}
+.DTTT_container {
+	display: none;
+}
+table#example {
+	border: 2px solid #1ACE9E;
+	background: #fff;
+}
+div#example_paginate {
+	background: rgb(255, 255, 255);
+	border-radius: 5px;
+	border: 2px solid rgb(26, 206, 157);
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+div#example_filter input {
+	padding: 5px;
+}
+div#example_length select {
+	padding: 5px;
+}
+a.paginate_button.current {
+	margin-bottom: 5px;
+}
+.fa-5x {
+	font-size: 10em;
+}
+.ui.vertical.divider {
+	height: 125px;
+}
+#rideButtons {
+	font-size: 17px;
+}
+#carpoolDetails {
+	background-color: #fafafa;
+	padding: 20px;
+	margin: 20px 0px 0px 0px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+}
+#carpoolDetails .field {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
