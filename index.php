@@ -67,7 +67,7 @@ if($_SESSION["success"]!=null){
                 <div class="collapse navbar-collapse" id="example-navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="index.php">Home</a>
                         </li>
                         <li>
                             <a href="#about">About Us</a>
@@ -122,56 +122,7 @@ if($_SESSION["success"]!=null){
                                             <div class="field">
                                                 <label>Name</label>
                                                 <div class="ui corner labeled input">
-                                                    <input placeholder="Preferred Location" type="text" id="location"  name="location"  required="true">
-                                                    <div class="ui corner label">
-                                                        <i class="asterisk icon"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="field">
-                                                <label>Vehicle Ask</label>
-                                                <div class="ui corner labeled input">
-                                                    <input placeholder="Course of study" type="text" id="course"  name="course"  required="true">
-                                                    <div class="ui corner label">
-                                                        <i class="asterisk icon"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div  class="three fields">
-                                            <div class="field">
-                                                <label>Date</label>
-                                                <div class="ui corner labeled input">
-                                                    <input placeholder="Preferred Location" type="date" id="location"  name="location"  required="true">
-                                                    <div class="ui corner label">
-                                                        <i class="asterisk icon"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="field">
-                                                <label>Pickup time</label>
-                                                <div class="ui corner labeled input">
-                                                    <input placeholder="Course of study" type="text" id="course"  name="course"  required="true">
-                                                    <div class="ui corner label">
-                                                        <i class="asterisk icon"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="field">
-                                                <label>Drop time</label>
-                                                <div class="ui corner labeled input">
-                                                    <input placeholder="Course of study" type="text" id="course"  name="course"  required="true">
-                                                    <div class="ui corner label">
-                                                        <i class="asterisk icon"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div  class="two fields">
-                                            <div class="field">
-                                                <label>Contact</label>
-                                                <div class="ui corner labeled input">
-                                                    <input placeholder="Preferred Location" type="date" id="location"  name="location"  required="true">
+                                                    <input placeholder="Name" type="text" id="location"  name="name"  required="true">
                                                     <div class="ui corner label">
                                                         <i class="asterisk icon"></i>
                                                     </div>
@@ -180,10 +131,81 @@ if($_SESSION["success"]!=null){
                                             <div class="field">
                                                 <label>Phone number</label>
                                                 <div class="ui corner labeled input">
-                                                    <input placeholder="Course of study" type="text" id="course"  name="course"  required="true">
+                                                    <input placeholder="Phone Number" type="text" id="course"  name="phone"  required="true">
                                                     <div class="ui corner label">
                                                         <i class="asterisk icon"></i>
                                                     </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div  class="two fields">
+                                            <div class="field">
+                                                <label>Date</label>
+                                                <div class="ui corner labeled input">
+                                                    <input placeholder="Date" type="date" id="location"  name="date"  required="true">
+                                                    <div class="ui corner label">
+                                                        <i class="asterisk icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label>Pickup time</label>
+                                                <div class="ui corner labeled input">
+                                                    <input placeholder="Pick Up Time" type="text" id="course"  name="time"  required="true">
+                                                    <div class="ui corner label">
+                                                        <i class="asterisk icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div  class="two fields">
+                                            <div class="field">
+                                                <label>Pick Up Location</label>
+                                                <div class="ui corner labeled input">
+                                                    <input placeholder="Pick Up Location" type="text" id="course"  name="pickUp"  required="true">
+                                                    <div class="ui corner label">
+                                                        <i class="asterisk icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label>Drop Off Location</label>
+                                                <div class="ui corner labeled input">
+                                                    <input placeholder="Drop off Location" type="text" id="course"  name="dropOff"  required="true">
+                                                    <div class="ui corner label">
+                                                        <i class="asterisk icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div  class="two fields">
+                                            <div class="field">
+                                                <label>Email</label>
+                                                <div class="ui corner labeled input">
+                                                    <input placeholder="Email Id" type="text" id="location"  name="emailId"  required="true">
+                                                    <div class="ui corner label">
+                                                        <i class="asterisk icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="field">
+                                                <label>Vehicle Ask</label>
+                                                <div class="ui corner labeled input">
+                                                    <input placeholder="Vehicle Ask" type="text" id="course"  name="vehicle"  required="true">
+                                                    <div class="ui corner label">
+                                                        <i class="asterisk icon"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="field">
+                                            <label>Seat</label>
+                                            <div class="ui corner labeled input">
+                                                <input placeholder="Seat" type="text" id="course"  name="seat"  required="true">
+                                                <div class="ui corner label">
+                                                    <i class="asterisk icon"></i>
                                                 </div>
                                             </div>
                                         </div>
