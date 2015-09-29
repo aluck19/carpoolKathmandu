@@ -76,7 +76,31 @@
 
 			<div id="mainContent">
 				<div class="container">
-					<div class="row">
+
+					<div id="CKsearch" class="row">
+						<div class="ui left icon input" style="width: 305px">
+							<input type="text" placeholder="Pick up Address">
+							<i class="Sign in icon"></i>
+						</div>
+						<div class="ui left icon input" style="width: 305px">
+							<input type="text" placeholder="Dropp off Address">
+							<i class="Sign out icon"></i>
+						</div>
+						<div class="ui left icon input">
+							<input type="date" placeholder="Date (mm/dd/yyyy)">
+							<i class="calendar icon"></i>
+						</div>
+						<div class="ui left icon input" style="width: 110px">
+							<input type="text" placeholder="Time">
+							<i class="clock icon"></i>
+						</div>
+
+						<div class="ui primary button">
+							<i class="search icon"></i> Search
+						</div>
+					</div><!-- search--->
+
+					<div id="buttomMarginOff" class="row">
 
 						<div class="ui two buttons">
 							<div class="ui primary button" id="rideButtons"  data-toggle="modal" data-target="#askRide" >
@@ -86,6 +110,7 @@
 								<i class="Sign out icon"></i> Offer
 							</div>
 						</div>
+						<!-- rideButtons -->
 
 						<!------------------------------- AskRide ------------------>
 						<div style="display: block;z-index: 99999;  position: absolute;">

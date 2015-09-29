@@ -117,6 +117,22 @@ a.paginate_button.current {
 .ui.vertical.divider {
 	height: 125px;
 }
+div#mainContent .container {
+	margin-bottom: 20px;
+}
+#CKsearch {
+	background-color: #fafafa;
+	padding: 20px;
+	margin: 10px 0px 20px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+}
+#CKsearch .ui.left.icon.input {
+	margin-right: 10px;
+}
+#buttomMarginOff {
+	margin: 0;
+}
 #rideButtons {
 	font-size: 17px;
 }
@@ -128,6 +144,19 @@ a.paginate_button.current {
 	border: 1px solid #ddd;
 }
 #carpoolDetails .field {
-    margin-bottom: 10px;
-    font-size: 16px;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+#carpoolLists {
+	background-color: #fafafa;
+	padding: 20px;
+	margin: 20px 0px 0px 0px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+}
+.CKtwofields .field {
+	display: inline-block;
+}
+.CKtwofields .field:last-child {
+	margin-left: 20px;
 }
