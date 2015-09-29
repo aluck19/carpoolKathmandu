@@ -77,39 +77,38 @@
 			<div id="mainContent">
 				<div class="container">
 
-					<div id="CKsearch" class="row">
-						<div class="ui left icon input" style="width: 305px">
-							<input type="text" placeholder="Pick up Address">
-							<i class="Sign in icon"></i>
-						</div>
-						<div class="ui left icon input" style="width: 305px">
-							<input type="text" placeholder="Dropp off Address">
-							<i class="Sign out icon"></i>
-						</div>
-						<div class="ui left icon input">
-							<input type="date" placeholder="Date (mm/dd/yyyy)">
-							<i class="calendar icon"></i>
-						</div>
-						<div class="ui left icon input" style="width: 110px">
-							<input type="text" placeholder="Time">
-							<i class="clock icon"></i>
-						</div>
+                    <div id="CKsearch" class="row">
+                        <form method="get" action="carpool-lists.php">
+                            <div class="ui left icon input" style="width: 305px">
+                                <input type="text" placeholder="Pick up Address" name="pickUp">
+                                <i class="Sign in icon"></i>
+                            </div>
+                            <div class="ui left icon input" style="width: 305px">
+                                <input type="text" placeholder="Dropp off Address" name="dropOff">
+                                <i class="Sign out icon"></i>
+                            </div>
+                            <div class="ui left icon input">
+                                <input type="date" placeholder="Date (mm/dd/yyyy)" name="date">
+                                <i class="calendar icon"></i>
+                            </div>
+                            <div class="ui left icon input" style="width: 110px">
+                                <input type="text" placeholder="Time" name="time">
+                                <i class="clock icon"></i>
+                            </div>
+                            <i class="search icon"></i><input type="submit" value="Search" class="ui primary button"/>
+                        </form>
+                    </div><!-- search--->
 
-						<div class="ui primary button">
-							<i class="search icon"></i> Search
-						</div>
-					</div><!-- search--->
+                    <div id="buttomMarginOff" class="row">
 
-					<div id="buttomMarginOff" class="row">
-
-						<div class="ui two buttons">
-							<div class="ui primary button" id="rideButtons"  data-toggle="modal" data-target="#askRide" >
-								<i class="Sign in icon"></i> Ask
-							</div>
-							<div class="ui positive button"   id="rideButtons" data-toggle="modal" data-target="#offerRide" >
-								<i class="Sign out icon"></i> Offer
-							</div>
-						</div>
+                        <div class="ui two buttons">
+                            <div class="ui primary button" id="rideButtons"  data-toggle="modal" data-target="#askRide" >
+                                <i class="Sign in icon"></i> Ask
+                            </div>
+                            <div class="ui positive button"   id="rideButtons" data-toggle="modal" data-target="#offerRide" >
+                                <i class="Sign out icon"></i> Offer
+                            </div>
+                        </div>
 						<!-- rideButtons -->
 
 						<!------------------------------- AskRide ------------------>
@@ -397,14 +396,21 @@
 						<!-- offer Ride -->
 
 					</div><!-- first row------------------------ -->
+					<?php
+                    include_once 'Common/DbConnection.php';
+					$carpoolId=$_GET["carpoolId"];
+                    $query="select *from AskAndOffer WHERE Id='$carpoolId'";
+                    $result=$conn->query($query);
+                    $row=mysqli_fetch_assoc($result);
 
+					?>
 					<div class="row" id="carpoolDetails">
 						<div  class="two fields">
 							<div class="field">
 								<label>Name: &nbsp; </label>
 								<div class="ui corner labeled input">
 									<p>
-										ddddddddddddd
+										<?php echo $row["Name"] ?>
 									</p>
 								</div>
 							</div>
@@ -412,8 +418,9 @@
 								<label>Vehicle: &nbsp;</label>
 								<div class="ui corner labeled input">
 									<p>
-										dddddddddd
-									</p>
+                                        <?php echo $row["Vehicle"] ?>
+
+                                    </p>
 								</div>
 							</div>
 						</div>
@@ -422,40 +429,50 @@
 								<label>Date: &nbsp;</label>
 								<div class="ui corner labeled input">
 									<p>
-										dddddddd
-									</p>
+                                        <?php echo $row["Date"] ?>
+                                    </p>
 								</div>
 							</div>
+                            <div class="field">
+                                <label>Pickup Time: &nbsp;</label>
+                                <div class="ui corner labeled input">
+                                    <p>
+                                        <?php echo $row["Time"] ?>
+                                    </p>
+                                </div>
+                            </div>
 							<div class="field">
-								<label>Pickup time: &nbsp;</label>
+								<label>Pickup Location: &nbsp;</label>
 								<div class="ui corner labeled input">
 									<p>
-										dddddddddddddddddd
-									</p>
+                                        <?php echo $row["PickUp"] ?>
+                                    </p>
 								</div>
 							</div>
 							<div class="field">
-								<label>Drop time: &nbsp;</label>
+								<label>Drop Location: &nbsp;</label>
 								<div class="ui corner labeled input">
-									<p></p>
+									<p>
+                                        <?php echo $row["DropOff"] ?>
+                                    </p>
 								</div>
 							</div>
 						</div>
 						<div  class="two fields">
 							<div class="field">
-								<label>Contact: &nbsp;</label>
+								<label>Phone: &nbsp;</label>
 								<div class="ui corner labeled input">
 									<p>
-										dddddddddddd
-									</p>
+                                        <?php echo $row["Phone"] ?>
+                                    </p>
 								</div>
 							</div>
 							<div class="field">
-								<label>Phone number: &nbsp;</label>
+								<label>Email Address: &nbsp;</label>
 								<div class="ui corner labeled input">
 									<p>
-										ddddddddddddddddddd
-									</p>
+                                        <?php echo $row["EmailId"] ?>
+                                    </p>
 								</div>
 							</div>
 						</div>
