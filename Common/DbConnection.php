@@ -6,5 +6,5 @@
  * Time: 4:10 AM
  */
 session_start();
-$conn=mysqli_connect("localhost","root","phenol69","CarpoolKathmandu")
+$conn=mysqli_connect("localhost","root","root","carpoolkatmandu")
 ?>
