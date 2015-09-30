@@ -25,7 +25,7 @@ if($_POST) {
         }
         echo json_encode($data);
     }
-    elseif($_POST['distinct'] == "date"){
+    /*elseif($_POST['distinct'] == "date"){
         $search=$_POST['search'];
         $query = "SELECT *from AskAndOffer WHERE Date LIKE '%$search%'";
         $result = $conn->query($query);
@@ -63,7 +63,7 @@ if($_POST) {
             $data[]=$location;
         }
         echo json_encode($data);
-    }
+    }*/
 
 }
 
