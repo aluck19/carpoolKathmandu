@@ -27,10 +27,13 @@ header {
 	background: #3B83C0;
 	text-align: center;
 	color: #fff;
-	height: 100px;
+	padding: 20px;
 }
 header h1 {
-	line-height: 100px;
+	padding: 10px;
+	border: 2px solid;
+	display: inline-block;
+	border-style: dashed;
 }
 /*----------- Wrapper --------------*/
 #bodyWrapper {
@@ -170,7 +173,14 @@ div#mainContent .container {
 	margin: 20px 0px 0px 0px;
 }
 #infoBox {
-		background-color: #fafafa;
+	background-color: #fafafa;
+	padding: 20px;
+	margin: 20px 0px 0px 0px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+}
+.contentBox {
+	background-color: #fff;
 	padding: 20px;
 	margin: 20px 0px 0px 0px;
 	border-radius: 5px;

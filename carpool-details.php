@@ -13,6 +13,8 @@ $row = mysqli_fetch_assoc($result);
 ?>
 <div class="row" id="carpoolDetails">
 
+	<p style="background: #fff; padding: 10px; font-size: 18px;"><span style="font-size: 20px; font-weight: bold;"><i class="info circle icon"></i>&nbsp; To Confirm </span> your seat Contact <?php echo ucfirst($row["Name"]) ?> at <?php echo ucfirst($row["Phone"]) ?></p>
+	
 	<div class="col-sm-4">
 		<div  class="two fields">
 			<div class="field">
@@ -108,7 +110,7 @@ $row = mysqli_fetch_assoc($result);
 
 	<div class="col-sm-8">
 			
-			<iframe width="100%" height="350px" src="http://maps.google.com/maps?saddr=<?php echo $row["PickUp"] ?>,Kathmandu&daddr=<?php echo $row["DropOff"] ?>,Kathmandu&ie=UTF8&t=&z=12&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			<iframe width="100%" height="350px" src="http://maps.google.com/maps?saddr=<?php echo $row["PickUp"] ?>,Kathmandu&daddr=<?php echo $row["DropOff"] ?>,Kathmandu&ie=UTF8&t=&z=14&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 			
 		
 	</div>

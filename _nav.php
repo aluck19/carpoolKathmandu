@@ -24,13 +24,10 @@
                         <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="#about">About Us</a>
-                    </li>
+                        <a href="about.php">About Us</a>
+                    </li>                    
                     <li>
-                        <a href="#faq">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
+                        <a href="contact.php">Contact</a>
                     </li>
                 </ul>
             </div>

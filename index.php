@@ -16,7 +16,10 @@ include 'includes/_header.php';
 				
 						
 					<div id="CKdataTable" class="row"  style="width: 1140px;margin: 0 auto; margin-bottom: 20px; margin-top: 20px;" >
-						<h3>Lates Posts</h3>
+						<h3 style="display: inline-block">Latest Posts</h3>
+						
+						<h2 style="display: inline-block; text-align: center; font-size: 25px; margin-left: 335px; margin-top: 0px; color: rgb(59, 131, 192); font-family: inherit;">Search  -&gt; View  -&gt; Contact </h2>
+						
 						<table id="example" class="display" cellspacing="0" width="100%">
 							<thead>
 								<tr>									
