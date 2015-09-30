@@ -16,7 +16,7 @@ $date=$_GET["date"];
 $time=$_GET["time"];
 $vehicle=$_GET["vehicle"];
 $seat=$_GET["seat"];
-$root=$_GET["route"];
+$route=$_GET["route"];
 date_default_timezone_set('Asia/Kathmandu');
 $createdDate=date("Y-m-d",time());
 $createdTime=strftime("%H:%M:%S", time());
@@ -27,7 +27,7 @@ if(isset($_GET['Ask'])){
     $type="Offer";
 }
 $query="INSERT into AskAndOffer VALUES (NULL ,'$name','$phone','$emailId','$pickUp','$dropOff','$date','$time','$vehicle'
-,'$seat','$type','$createdDate','$createdTime','$root')";
+,'$seat','$type','$createdDate','$createdTime','$route')";
 
 if($conn->query($query)){
     header("Location:index.php");
