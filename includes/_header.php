@@ -39,6 +39,7 @@ include 'Common/DbConnection.php';
 		<!--[if lt IE 9]>
 		<script src="bootstrap/html5shiv.min.js"></script>
 		<script src="bootstrap/respond.min.js"></script>
+
 		<![endif]-->
 
 	</head>
@@ -64,5 +65,6 @@ include_once '_nav.php'
 					<div id="infoBox" class="row">
 						<h4 style="display: inline-block;color: #3B83C0;font-size: 25px;margin: 0px">ASK - if you need a ride</h4>
 						<h4 style="display: inline-block;margin-top: 0;color: #5BBD72;font-size: 25px; margin-left: 30px;">Offer - if you want to offer a ride</h4>
-						<h3 style="margin:0;">Please! fill the form with real and valid data. Let's help each other with Carpool KTM</h4>
+						<h4 style="margin:0;">Please! fill the from with real data. Let's help each other with Carpool KTM</h4>
+					</div>						<h3 style="margin:0;">Please! fill the form with real and valid data. Let's help each other with Carpool KTM</h4>
 					</div>
