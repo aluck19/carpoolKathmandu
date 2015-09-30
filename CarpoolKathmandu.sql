@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 30, 2015 at 12:58 AM
+-- Generation Time: Sep 30, 2015 at 09:44 AM
 -- Server version: 5.5.44-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.12
 
@@ -40,9 +40,9 @@ CREATE TABLE IF NOT EXISTS `AskAndOffer` (
   `Type` varchar(10) NOT NULL,
   `CreatedDate` varchar(20) NOT NULL,
   `CreatedTime` varchar(20) NOT NULL,
-  `Root` varchar(100) NOT NULL,
+  `Route` varchar(100) NOT NULL,
   PRIMARY KEY (`Id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
