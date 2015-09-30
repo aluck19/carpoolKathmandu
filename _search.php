@@ -20,7 +20,7 @@
         <input type="date" placeholder="Date (mm/dd/yyyy)">
         <i class="calendar icon"></i>
     </div>
-    <div class="ui left icon input" style="width: 110px">
+    <div class="ui left icon input" style="width: 125px">
         <input type="text" placeholder="Time">
         <i class="clock icon"></i>
     </div>
@@ -28,6 +28,6 @@
     <!--<div class="ui primary button">
         <i class="search icon"></i> Search
     </div>-->
-    <input type="submit" class="ui primary button" value="Search"/>
+    <input type="submit" class="ui  button" value="Search"/>
     </form>
 </div><!-- search--->

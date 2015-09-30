@@ -69,9 +69,9 @@
                             </div>
                             <div  class="three fields">
                                 <div class="field">
-                                    <label>Date</label>
+                                    <label>Date(mm/dd/yyyy)</label>
                                     <div class="ui corner labeled input">
-                                        <input placeholder="Date" type="date" id="location"  name="date"  required="true">
+                                        <input placeholder="Date(mm/dd/yyyy)" type="date" id="location"  name="date"  required="true">
                                         <div class="ui corner label">
                                             <i class="asterisk icon"></i>
                                         </div>
@@ -108,9 +108,9 @@
                                     </div>
                                 </div>
                                 <div class="field">
-                                    <label>Vehicle Ask</label>
+                                    <label>Vehicle Ask(Bike/Car/Van)</label>
                                     <div class="ui corner labeled input">
-                                        <input placeholder="Vehicle Ask" type="text" id="course"  name="vehicle"  required="true">
+                                        <input placeholder="Vehicle Ask(Bike/Car/Van)" type="text" id="course"  name="vehicle"  required="true">
                                         <div class="ui corner label">
                                             <i class="asterisk icon"></i>
                                         </div>
@@ -137,15 +137,17 @@
                                 </div>
                             </div>
 
-                           <!-- <div class="field">
+<!--
+                           <div class="field">
                                 <label>Any other comments</label>
                                 <div class="ui corner labeled input">
                                     <textarea name="comments" id = "comments" maxlength="1000" cols="2" rows="2"required="true"></textarea>
-                                    <!--<div class="ui corner label">
+                                    <div class="ui corner label">
                                     <i class="asterisk icon"></i>
-                                    </div>-->
+                                    </div>
                                 </div>
-                            </div>
+                            </div>-->
+
                     </div>
                     <div class="modal-footer">
                         <!--<button type="button" id = "close" class="btn btn-danger" data-dismiss="modal" style="font-size: 14px; font-family: inherit; font-weight: bold;padding: 7px 18px; margin-right: 5px;">
@@ -240,7 +242,7 @@
                             </div>
                             <div  class="three fields">
                                 <div class="field">
-                                    <label>Date</label>
+                                    <label>Date (mm/dd/yyyy)</label>
                                     <div class="ui corner labeled input">
                                         <input placeholder="Date" type="date" id="location"  name="date"  required="true">
                                         <div class="ui corner label">
@@ -279,9 +281,9 @@
                                     </div>
                                 </div>
                                 <div class="field">
-                                    <label>Vehicle Ask</label>
+                                    <label>Vehicle Offer (Bike/Car/Van)</label>
                                     <div class="ui corner labeled input">
-                                        <input placeholder="Vehicle Ask" type="text" id="course"  name="vehicle"  required="true">
+                                        <input placeholder="Vehicle Offer (Bike/Car/Van)" type="text" id="course"  name="vehicle"  required="true">
                                         <div class="ui corner label">
                                             <i class="asterisk icon"></i>
                                         </div>

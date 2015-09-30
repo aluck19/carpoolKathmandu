@@ -48,7 +48,7 @@ header h1 {
 footer {
 	width: 100% !important;
 	height: 50px !important;
-	position: absolute !important;
+	/*position: absolute !important;*/
 	bottom: 0 !important;
 	left: 0 !important;
 	background: rgb(91, 189, 114) none repeat scroll 0% 0%;
@@ -168,4 +168,11 @@ div#mainContent .container {
 }
 #CKdataTable {
 	margin: 20px 0px 0px 0px;
+}
+#infoBox {
+		background-color: #fafafa;
+	padding: 20px;
+	margin: 20px 0px 0px 0px;
+	border-radius: 5px;
+	border: 1px solid #ddd;
 }
