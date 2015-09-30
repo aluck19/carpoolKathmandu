@@ -105,6 +105,14 @@ $row = mysqli_fetch_assoc($result);
 				</p>
 			</div>
 		</div>
+        <div class="field">
+            <label>Route: &nbsp;</label>
+            <div class="ui corner labeled input">
+                <p>
+                    <?php echo $row["Type"] ?>
+                </p>
+            </div>
+        </div>
 
 	</div>
 

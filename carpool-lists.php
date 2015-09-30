@@ -9,7 +9,6 @@ include 'includes/_header.php';
             $date=$_GET["date"];
             $time=$_GET["time"];
             $query = "select *from AskAndOffer where PickUp LIKE '%$pickUp%' OR DropOff LIKE '%$dropOff%' OR Date LIKE '%$date%' OR Time LIKE '%$time%' ";
-            echo $query;
             $result=$conn->query($query);
             ?>
 
