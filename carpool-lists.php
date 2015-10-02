@@ -24,7 +24,7 @@ $result=$conn->query($query);
     <div class="row" id="carpoolLists">
         <div class="ui middle aligned divided list">
             <?php
-            if(!$result){
+            if($result){
                 while($row=mysqli_fetch_assoc($result)) {
                     ?>
                     <div class="item">
