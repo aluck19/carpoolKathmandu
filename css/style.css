@@ -24,7 +24,7 @@ h2.h2Styled, h3.h3Styled {
 }
 /*----------- Header --------------*/
 header {
-	background: #3B83C0;
+	background: #3ED8FB;
 	text-align: center;
 	color: #fff;
 	padding: 20px;
@@ -54,7 +54,7 @@ footer {
 	/*position: absolute !important;*/
 	bottom: 0 !important;
 	left: 0 !important;
-	background: rgb(91, 189, 114) none repeat scroll 0% 0%;
+	background: #F95656;
 	color: #fff;
 }
 div#liscene p {
@@ -95,13 +95,12 @@ div#sthoverbuttons {
 	display: none;
 }
 table#example {
-	border: 2px solid #1ACE9E;
-	background: #fff;
+	border: 2px solid #3ED8FB;
 }
 div#example_paginate {
 	background: rgb(255, 255, 255);
 	border-radius: 5px;
-	border: 2px solid rgb(26, 206, 157);
+	border: 2px solid #3ED8FB;
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
@@ -131,7 +130,7 @@ div#mainContent .container {
 }
 #CKsearch {
 	background-color: #fafafa;
-	padding: 20px;
+	padding: 0px 20px 20px;
 	margin: 10px 0px 20px;
 	border-radius: 5px;
 	border: 1px solid #ddd;
@@ -185,4 +184,9 @@ div#mainContent .container {
 	margin: 20px 0px 0px 0px;
 	border-radius: 5px;
 	border: 1px solid #ddd;
+}
+div#CKsearch .ui.input input {
+        width: 487px;
+    font-size: 15px;
+    padding: 10px 10px 10px 30px;
 }

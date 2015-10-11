@@ -4,7 +4,6 @@ include 'includes/_header.php';
 
 
 
-
 					<?php
 					include_once '_search.php';
 					include_once '_model.php';
@@ -13,6 +12,7 @@ include 'includes/_header.php';
 						$_SESSION["success"] = null;
 					}
 					?>
+				
 				
 						
 					<div id="CKdataTable" class="row"  style="width: 1140px;margin: 0 auto; margin-bottom: 20px; margin-top: 20px;" >
@@ -34,7 +34,7 @@ include 'includes/_header.php';
 								</tr>
 							</thead>
                             <?php
-                            $sql="Select *from AskAndOffer";
+                            $sql="Select *from AskAndOffer ORDER BY id DESC";
                             $result=$conn->query($sql);
                             while($row=mysqli_fetch_assoc($result)){
                             ?>

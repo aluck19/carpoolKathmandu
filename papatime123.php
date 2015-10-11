@@ -6,6 +6,16 @@
  * Time: 3:27 PM
  */
 include_once 'Common/DbConnection.php';
+
+
+
+
+
+$query = "select count(*) from AskAndOffer WHERE type='ask' ";
+$result = $conn -> query($query);
+$row = mysqli_fetch_assoc($result);
+echo $row; 
+
 $query="select *from AskAndOffer";
 
 $result=$conn->query($query);

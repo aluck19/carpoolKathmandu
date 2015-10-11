@@ -11,8 +11,11 @@ $query = "select *from AskAndOffer WHERE Id='$carpoolId'";
 $result = $conn -> query($query);
 $row = mysqli_fetch_assoc($result);
 ?>
-<div class="row" id="carpoolDetails">
 
+
+
+<div class="row" id="carpoolDetails">
+	
 	<p style="background: #fff; padding: 10px; font-size: 18px;"><span style="font-size: 20px; font-weight: bold;"><i class="info circle icon"></i>&nbsp; To Confirm </span> your seat Contact <?php echo ucfirst($row["Name"]) ?> at <?php echo ucfirst($row["Phone"]) ?></p>
 	
 	<div class="col-sm-4">
@@ -106,7 +109,7 @@ $row = mysqli_fetch_assoc($result);
 			</div>
 		</div>
         <div class="field">
-            <label>Route: &nbsp;</label>
+            <label>Type: &nbsp;</label>
             <div class="ui corner labeled input">
                 <p>
                     <?php echo $row["Type"] ?>

@@ -9,10 +9,10 @@
 <div id="buttomMarginOff" class="row">
 
     <div class="ui two buttons">
-        <div class="ui primary button" id="rideButtons"  data-toggle="modal" data-target="#askRide" >
+        <div class="ui button"style="background: #3ED8FB; color: #FFFFFF;"  id="rideButtons"  data-toggle="modal" data-target="#askRide" >
             <i class="Sign in icon"></i> Ask
         </div>
-        <div class="ui positive button"   id="rideButtons" data-toggle="modal" data-target="#offerRide" >
+        <div class="ui button"  style="background: #F95656; color: #FFFFFF;" id="rideButtons" data-toggle="modal" data-target="#offerRide" >
             <i class="Sign out icon"></i> Offer
         </div>
     </div>
@@ -69,7 +69,7 @@
                             </div>
                             <div  class="three fields">
                                 <div class="field">
-                                    <label>Date(mm/dd/yyyy)</label>
+                                    <label>Pick UP Date (yyyy-mm-dd)</label>
                                     <div class="ui corner labeled input">
                                         <input placeholder="Date(mm/dd/yyyy)" type="date" id="location"  name="date"  required="true">
                                         <div class="ui corner label">
@@ -78,7 +78,7 @@
                                     </div>
                                 </div>
                                 <div class="field">
-                                    <label>Pickup time</label>
+                                    <label>Pick Up time (AM/PM)</label>
                                     <div class="ui corner labeled input">
                                         <input placeholder="Pick Up Time" type="text" id="course"  name="time"  required="true">
                                         <div class="ui corner label">
@@ -108,7 +108,7 @@
                                     </div>
                                 </div>
                                 <div class="field">
-                                    <label>Vehicle Ask(Bike/Car/Van)</label>
+                                    <label>Vehicle Ask (Bike/Car/Van)</label>
                                     <div class="ui corner labeled input">
                                         <input placeholder="Vehicle Ask(Bike/Car/Van)" type="text" id="course"  name="vehicle"  required="true">
                                         <div class="ui corner label">
@@ -242,7 +242,7 @@
                             </div>
                             <div  class="three fields">
                                 <div class="field">
-                                    <label>Date (mm/dd/yyyy)</label>
+                                  <label>Pick UP Date (yyyy-mm-dd)</label>
                                     <div class="ui corner labeled input">
                                         <input placeholder="Date" type="date" id="location"  name="date"  required="true">
                                         <div class="ui corner label">
@@ -251,7 +251,7 @@
                                     </div>
                                 </div>
                                 <div class="field">
-                                    <label>Pickup time</label>
+                                    <label>Pick Up time (AM/PM)</label>
                                     <div class="ui corner labeled input">
                                         <input placeholder="Pick Up Time" type="text" id="course"  name="time"  required="true">
                                         <div class="ui corner label">
